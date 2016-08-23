@@ -1,6 +1,6 @@
-export declare class Tiff {
-    static initialize(options: Tiff.InitializeOptions): void;
-    constructor(params: Tiff.Params);
+export default class Tiff {
+    static initialize(options: TiffModule.InitializeOptions): void;
+    constructor(params: TiffModule.Params);
     public width(): number;
     public height(): number;
     public currentDirectory(): number;
@@ -12,9 +12,11 @@ export declare class Tiff {
     public toDataURL(): string;
     public close(): void;
 }
-declare module Tiff {
+
+declare module TiffModule {
     interface InitializeOptions {
         TOTAL_MEMORY?: number;
+        IMAGEWIDTH?: number;
     }
     interface Params {
         buffer: ArrayBuffer;
