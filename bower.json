@@ -18,6 +18,7 @@
   "ignore": [
     "*",
     "!tiff.min.js",
-    "!tiff.js"
+    "!tiff.js",
+    "!tiff.d.ts"
   ]
 }
