@@ -1,4 +1,4 @@
-declare class Tiff {
+export declare class Tiff {
     static initialize(options: Tiff.InitializeOptions): void;
     constructor(params: Tiff.Params);
     public width(): number;
